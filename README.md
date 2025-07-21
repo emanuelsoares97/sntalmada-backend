@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SNT Almada - Backend
 
 Este é o repositório backend para o site da SNT Almada, desenvolvido com Django e Django Rest Framework.
@@ -17,3 +18,6 @@ Este é o repositório backend para o site da SNT Almada, desenvolvido com Djang
 4. Crie um arquivo `.env` a partir do `.env.example` e preencha as variáveis.
 5. Rode as migrações: `python manage.py migrate`.
 6. Inicie o servidor de desenvolvimento: `python manage.py runserver`. 
+=======
+# sntalmada-backend
+>>>>>>> 988c2ec97662dfb7b6ea36be12f2b196386d3d92

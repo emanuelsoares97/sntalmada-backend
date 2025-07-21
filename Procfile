@@ -1,0 +1,1 @@
+web: gunicorn sntalmada.wsgi:application --log-file - 

@@ -1,23 +1,44 @@
-<<<<<<< HEAD
+
 # SNT Almada - Backend
 
-Este é o repositório backend para o site da SNT Almada, desenvolvido com Django e Django Rest Framework.
+Backend do site da SNT Almada. Feito em Django + Django Rest Framework. Aqui está tudo o que precisas para meter o chat bíblico a funcionar.
 
-## Funcionalidades
+## Instalação rápida
 
-- API para Chatbot Bíblico com IA (usando Perplexity AI).
-- Gerenciamento de sessões e mensagens de chat.
-- Estrutura de configurações separada para desenvolvimento e produção.
-- Pronto para deploy em plataformas como Railway ou Render.
+1. Faz clone do repositório.
+2. Cria ambiente virtual:
+   - `python -m venv env`
+   - Ativa: `env\Scripts\activate` (Windows) ou `source env/bin/activate` (Linux/Mac)
+3. Instala dependências:
+   - `pip install -r requirements.txt`
+4. Copia `.env.example` para `.env` e mete a tua chave Perplexity lá.
+5. Faz as migrações:
+   - `python manage.py migrate`
+6. Corre o servidor:
+   - `python manage.py runserver`
 
-## Como começar
+## Como funciona o chat
 
-1. Clone o repositório.
-2. Crie e ative um ambiente virtual: `python -m venv env` e `source env/bin/activate`.
-3. Instale as dependências: `pip install -r requirements.txt`.
-4. Crie um arquivo `.env` a partir do `.env.example` e preencha as variáveis.
-5. Rode as migrações: `python manage.py migrate`.
-6. Inicie o servidor de desenvolvimento: `python manage.py runserver`. 
-=======
-# sntalmada-backend
->>>>>>> 988c2ec97662dfb7b6ea36be12f2b196386d3d92
+- Só responde perguntas sobre Bíblia, cristianismo ou teologia.
+- Perguntas fora desse tema recebem resposta padrão.
+- Se perguntares por pastores ou comunidade, responde também.
+- As respostas não têm referências tipo [1], [2], etc.
+
+## Estrutura
+
+- apps/chatbot_biblico: lógica do chat, integra com Perplexity.
+- sntalmada/settings: configurações para dev, produção, testing.
+- manage.py: comando principal do Django.
+
+## Ambiente de produção
+
+- Pronto para deploy em Railway, Render, ou outro serviço que corra Django.
+- Usa variáveis de ambiente para chave Perplexity e settings.
+
+## Dicas
+
+- Se nunca mexeste em Django, lê o código dos apps e das views para perceber como funciona.
+- Qualquer dúvida, pergunta ou pede exemplos.
+
+---
+Projeto mantido por SNT Almada. Qualquer sugestão ou bug, avisa.

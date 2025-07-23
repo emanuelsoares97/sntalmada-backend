@@ -132,7 +132,7 @@ class PerplexityService:
         # Só responde perguntas bíblicas/cristãs/teologia
         if not self.verificar_pergunta_biblica(pergunta):
             return {
-                'resposta': 'Desculpa, só respondo perguntas sobre a Bíblia, cristianismo ou teologia. Se quiseres saber sobre a comunidade ou os pastores, pergunta diretamente por eles!',
+                'resposta': 'Desculpa, só respondo perguntas sobre a Bíblia, cristianismo ou teologia. Se quiseres saber sobre a comunidade ou os pastores, pergunta diretamente a eles!',
                 'e_biblico': False,
                 'status': 'rejeitado'
             }

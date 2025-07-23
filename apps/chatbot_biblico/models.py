@@ -13,7 +13,7 @@ class SessaoChat(models.Model):
 
 class MensagemChat(models.Model):
     TIPO_CHOICES = [
-        ('usuario', 'Usuário'),
+        ('utilizador', 'Utilizador'),
         ('assistente', 'Assistente'),
     ]
     

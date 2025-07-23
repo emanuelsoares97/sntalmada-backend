@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
             name='MensagemChat',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('tipo', models.CharField(choices=[('usuario', 'Usuário'), ('assistente', 'Assistente')], max_length=20)),
+                ('tipo', models.CharField(choices=[('utilizador', 'Utilizador'), ('assistente', 'Assistente')], max_length=20)),
                 ('conteudo', models.TextField()),
                 ('e_biblico', models.BooleanField(default=True)),
                 ('citacoes', models.JSONField(blank=True, default=list)),
